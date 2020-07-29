@@ -21,8 +21,10 @@ export default function About(props) {
         Cellular automata can be used to create musical and visual compositions, to generate
         random numbers and sequences, and to study the development of life itself.
         </p>
+       
         <Link to='/gameoflife'><button>Go to the Game!</button></Link>
         <Link to='/rules'><button>Rules of the Game</button></Link>
+        <Link to='/' className="WELCOME"><button className="WELCOME">Welcome</button></Link>
       </div>
     </div>
   )
