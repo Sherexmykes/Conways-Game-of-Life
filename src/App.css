@@ -5,10 +5,7 @@
   font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
 }
 
-h1 {
-  font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
-  color: black;
-}
+
 
 
 body {
@@ -34,3 +31,33 @@ body {
   width: auto;
 }
 
+.dark-mode__toggle {
+  background: papayawhip;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle {
+  background: #f68819;
+  border-radius: 50px;
+  height: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
+}
