@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Conway's Game Of Life
+The Game of Life is a cellular automaton game created by John Horton Conway. It is a single person logic game where the player chooses the initial set up, rules are applied to see what happens in the next generation,and play continues to happen until one of three things happen (will be mentioned in the rules below). The game requires no input once the game has begun or initialized. The game was created in 1970 but players, programmers, and enthusiasts continue to enjoy the game, and investigate the complexities of the game. 
 
-## Available Scripts
+Cellular automata can be used to create musical and visual compositions, to generate random numbers and sequences, and to study the development of life itself. 
 
-In the project directory, you can run:
+The game is said to be [Turing-Complete] (https://en.wikipedia.org/wiki/Turing_completeness) , due to using data manipulation rule sets. We also see celluar automata used today in several when we look visual compositions, generate random numbers and sequences, and to study the development of life itself.
 
-### `yarn start`
+## Rules for the Game of Life:
+1. If the cell is alive and has 2 or 3 neighbors, then it remains alive. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. If the cell is dead and has exactly 3 neighbors, then it comes to life. Else if remains dead. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+3. Each live cell with four or more live neighbors will die in the next generation.
 
-### `yarn test`
+## Features
+1. Random button, where where the player can allow the game to randomly generate patterns before pressing start.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. The player can change the speed.
 
-### `yarn build`
+3. Custom Dark Mode feature.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Install
+To install this version of the game you most clone github repo and use:
+```
+npm install
+npm start
+```
+Game should come up on http://localhost:3000
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Styling:
+The Background is initially dodgerblue with black letters. Once in dark mode the letters will become white with a black back ground. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+.dark-mode {
+  color: #fff;
+  background-color: black;
+}
+```
+To design the board linear-gradient was used:
+```
+background-image:
+        linear-gradient(black 1px, transparent 1px),
+        linear-gradient(90deg, black 1px, transparent 1px);
+      ```  
+```
+## Deployment
+https://sheilasgameoflife.netlify.app/
 
-### `yarn eject`
+## Built With
+Create React App. Implemented with Hooks and Class Components.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Acknowledgments
+Hat tip to Brad Zickafoose and Brad Pitts for helping me with the deployment kinks.
