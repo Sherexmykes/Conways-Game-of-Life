@@ -10,8 +10,8 @@ const CELL_SIZE = 20;
 const WIDTH = 640;
 const HEIGHT =  440;
 
-const rows = 25;
-const columns = 25;
+//const rows = 25;
+//const columns = 25;
 
 
 //const operations = [
