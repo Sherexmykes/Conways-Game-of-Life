@@ -24,11 +24,12 @@
     color: dodgerblue;
     margin: 7px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .container {
     width: 100%;
-    height: 800px;
+    height: 500px;
 }
 
 .speed {

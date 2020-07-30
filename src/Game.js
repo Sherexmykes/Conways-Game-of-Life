@@ -10,8 +10,8 @@ const CELL_SIZE = 20;
 const WIDTH = 640;
 const HEIGHT =  440;
 
-const rows = 25;
-const columns = 25;
+//const rows = 25;
+//const columns = 25;
 
 
 //const operations = [
@@ -100,7 +100,7 @@ class Grid extends React.Component {
       };
      
       handleClear = () => {
-        this.gameboard = this.makeNewBoard();
+        this.gameboard = this.createNewBoard();
         this.setState({ gamecells: this.createNewCells() , generationNum: 0 });
       };
 
