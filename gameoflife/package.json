@@ -1,6 +1,6 @@
 {
   "name": "gameoflife",
-  "homepage": "https://<github-Sherexmykes>.github.io/<Conways-Game-of-Life>/",
+  "homepage": "https://sherexmykes.github.io/Conways-Game-of-Life/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
