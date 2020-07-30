@@ -100,7 +100,7 @@ class Grid extends React.Component {
       };
      
       handleClear = () => {
-        this.gameboard = this.makeNewBoard();
+        this.gameboard = this.createNewBoard();
         this.setState({ gamecells: this.createNewCells() , generationNum: 0 });
       };
 
