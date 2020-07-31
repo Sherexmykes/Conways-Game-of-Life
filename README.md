@@ -3,7 +3,7 @@ The Game of Life is a cellular automaton game created by John Horton Conway. It 
 
 Cellular automata can be used to create musical and visual compositions, to generate random numbers and sequences, and to study the development of life itself. 
 
-The game is said to be [Turing-Complete] (https://en.wikipedia.org/wiki/Turing_completeness) , due to using data manipulation rule sets. We also see celluar automata used today in several when we look visual compositions, generate random numbers and sequences, and to study the development of life itself.
+The game is said to be Turing-Complete (https://en.wikipedia.org/wiki/Turing_completeness) , due to using data manipulation rule sets. We also see celluar automata used today in several  when we look visual compositions, generate random numbers and sequences, and to study the development of life itself.
 
 ## Rules for the Game of Life:
 1. If the cell is alive and has 2 or 3 neighbors, then it remains alive. 
@@ -13,7 +13,7 @@ The game is said to be [Turing-Complete] (https://en.wikipedia.org/wiki/Turing_c
 3. Each live cell with four or more live neighbors will die in the next generation.
 
 ## Features
-1. Random button, where where the player can allow the game to randomly generate patterns before pressing start.
+1. Random button, where the player can allow the game to randomly generate patterns before pressing start.
 
 2. The player can change the speed.
 
@@ -41,7 +41,7 @@ To design the board linear-gradient was used:
 background-image:
         linear-gradient(black 1px, transparent 1px),
         linear-gradient(90deg, black 1px, transparent 1px);
-      ```  
+       
 ```
 ## Deployment
 https://sheilasgameoflife.netlify.app/
